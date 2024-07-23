@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>Teste de Perfil Comportamental</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.2"></script>
+</head>
+
+<body id="TesteDiscTela">
+    <h1>Teste de Perfil Comportamental</h1>
+    <p>Dentro de cada bloco de 4 palavras, odene-as, colocando na primeira posição a que mais lhe representa. Em seguida, clique em "Finalizar".</p>
+
+    <div class="Bloco" id="bloco1" >
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button id="botao1" class="TestButton" draggable="true" data-value="99" data-category="dominancia" ondragstart="dragStart(event)">Obstinado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao2"  class="TestButton" draggable="true" data-value="99" data-category="influencia" ondragstart="dragStart(event)">Persuasivo</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao3"  class="TestButton"draggable="true" data-value="99" data-category="estabilidade" ondragstart="dragStart(event)">Previsível</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao4" class="TestButton" draggable="true" data-value="99" data-category="cautela" ondragstart="dragStart(event)">Perfeccionista</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+  </div>
+
+    <div class="Bloco" id="bloco2">
+  
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao6"  class="TestButton" draggable="true" data-value="90" data-category="influencia" ondragstart="dragStart(event)">Inspirador</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao5"  class="TestButton" draggable="true" data-value="90" data-category="dominancia" ondragstart="dragStart(event)">Energético</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao8"  class="TestButton" draggable="true" data-value="90" data-category="cautela" ondragstart="dragStart(event)">Sistemático</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao7"  class="TestButton" draggable="true" data-value="90" data-category="estabilidade" ondragstart="dragStart(event)">Passivo</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <div class="Bloco" id="bloco3">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao12"  class="TestButton" draggable="true" data-value="80" data-category="cautela" ondragstart="dragStart(event)">Cuidadoso</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao9"  class="TestButton" draggable="true" data-value="80" data-category="dominancia" ondragstart="dragStart(event)">Ousado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao10"  class="TestButton" draggable="true" data-value="80" data-category="influencia" ondragstart="dragStart(event)">Entusiasta</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao11"  class="TestButton" draggable="true" data-value="80" data-category="estabilidade" ondragstart="dragStart(event)">Complacente</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco4">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao13"  class="TestButton" draggable="true" data-value="70" data-category="dominancia" ondragstart="dragStart(event)">Determinado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao14"  class="TestButton" draggable="true" data-value="70" data-category="influencia" ondragstart="dragStart(event)">Sociável</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao16"  class="TestButton" draggable="true" data-value="70" data-category="cautela" ondragstart="dragStart(event)">Analítico</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao15"  class="TestButton" draggable="true" data-value="70" data-category="estabilidade" ondragstart="dragStart(event)">Estável</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco5">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao18"  class="TestButton" draggable="true" data-value="60" data-category="influencia" ondragstart="dragStart(event)">Preparado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao17"  class="TestButton" draggable="true" data-value="60" data-category="dominancia" ondragstart="dragStart(event)">Competitivo</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao19"  class="TestButton" draggable="true" data-value="60" data-category="estabilidade" ondragstart="dragStart(event)">Consistente</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao20"  class="TestButton" draggable="true" data-value="60" data-category="cautela" ondragstart="dragStart(event)">Metódico</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco6">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao21"  class="TestButton" draggable="true" data-value="50" data-category="dominancia" ondragstart="dragStart(event)">Responsável</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao22"  class="TestButton" draggable="true" data-value="50" data-category="influencia" ondragstart="dragStart(event)">Encantador</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao23"  class="TestButton" draggable="true" data-value="50" data-category="estabilidade" ondragstart="dragStart(event)">Constante</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao24"  class="TestButton" draggable="true" data-value="50" data-category="cautela" ondragstart="dragStart(event)">Ordenado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco7">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao25"  class="TestButton" draggable="true" data-value="40" data-category="dominancia" ondragstart="dragStart(event)">Questionador</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao27"  class="TestButton" draggable="true" data-value="40" data-category="estabilidade" ondragstart="dragStart(event)">Extrovertido</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao26"  class="TestButton" draggable="true" data-value="40" data-category="influencia" ondragstart="dragStart(event)">Convincente</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao28"  class="TestButton" draggable="true" data-value="40" data-category="cautela" ondragstart="dragStart(event)">Equilibrado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco8">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao32"  class="TestButton" draggable="true" data-value="30" data-category="cautela" ondragstart="dragStart(event)">Independente</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao29"  class="TestButton" draggable="true" data-value="30" data-category="dominancia" ondragstart="dragStart(event)">Conservador</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao31"  class="TestButton" draggable="true" data-value="30" data-category="estabilidade" ondragstart="dragStart(event)">Agitado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao30"  class="TestButton" draggable="true" data-value="30" data-category="influencia" ondragstart="dragStart(event)">Reflexivo</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco9">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao33"  class="TestButton" draggable="true" data-value="20" data-category="dominancia" ondragstart="dragStart(event)">Suave</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao34"  class="TestButton" draggable="true" data-value="20" data-category="influencia" ondragstart="dragStart(event)">Factual</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao35"  class="TestButton" draggable="true" data-value="20" data-category="estabilidade" ondragstart="dragStart(event)">Ativo</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao36"  class="TestButton" draggable="true" data-value="20" data-category="cautela" ondragstart="dragStart(event)">Rebelde</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <div class="Bloco" id="bloco10">
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+       <button  id="botao39"  class="TestButton" draggable="true" data-value="10" data-category="estabilidade" ondragstart="dragStart(event)">Caótico</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao38"  class="TestButton" draggable="true" data-value="10" data-category="influencia" ondragstart="dragStart(event)">Retraído</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao40"  class="TestButton" draggable="true" data-value="10" data-category="cautela" ondragstart="dragStart(event)">Descuidado</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+        <button  id="botao37"  class="TestButton" draggable="true" data-value="10" data-category="dominancia" ondragstart="dragStart(event)">Agradável</button>
+        <div class="ghost" ondrop="drop(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <button id="TesteDiscFinalizarButton" onclick="calcularMedias()">Finalizar</button>
+
+    <fieldset style="display: none;" id="resultado-fieldset">
+        <div id="resultado" style="display: none;">
+            <h2>Resultado</h2>
+            <p id="resultado-dominancia"></p>
+            <p id="resultado-influencia"></p>
+            <p id="resultado-estabilidade"></p>
+            <p id="resultado-cautela"></p>
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </fieldset>
+
+    <script src="/teste.js"></script>
+</body>
+</html>
+
+
+
